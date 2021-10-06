@@ -9,23 +9,28 @@ function converter() {
             confirmButtonColor: '#3085d6',
             icon: 'error',
             text: "Selecione outra temperatura final"
-        }
-        )
+        })
     } else if (temp1 == 'Celcius' && temp2 == 'Fahrenheit') {
         var tempConvertida = (tempConverter * 9 / 5) + 32;
         document.getElementById("temperaturaConvertida").value = parseFloat(tempConvertida);
     } else if (temp1 == 'Celcius' && temp2 == 'Kelvin') {
         var tempConvertida = tempConverter + 273.15;
         document.getElementById("temperaturaConvertida").value = parseFloat(tempConvertida);
-    }else if (temp1 == 'Fahrenheit' && temp2 == 'Celcius') {
-        var tempConvertida =  (tempConverter - 32) * 5/9;
+    } else if (temp1 == 'Fahrenheit' && temp2 == 'Celcius') {
+        var tempConvertida = (tempConverter - 32) * 5 / 9;
         document.getElementById("temperaturaConvertida").value = parseFloat(tempConvertida);
-    }else if (temp1 == 'Fahrenheit' && temp2 == 'Kelvin') {
-        var tempConvertida =  (tempConverter - 32) * 5/9 + 273.15;
+    } else if (temp1 == 'Fahrenheit' && temp2 == 'Kelvin') {
+        var tempConvertida = (tempConverter - 32) * 5 / 9 + 273;
+        document.getElementById("temperaturaConvertida").value = parseFloat(tempConvertida);
+    } else if (temp1 == 'Kelvin' && temp2 == 'Celcius') {
+        var tempConvertida = (tempConverter - 273.15).toFixed(2);
+        document.getElementById("temperaturaConvertida").value = parseFloat(tempConvertida);
+    } else if (temp1 == 'Kelvin' && temp2 == 'Fahrenheit') {
+        var tempConvertida = (1.8 * (tempConverter - 273) + 32 ).toFixed(2);
         document.getElementById("temperaturaConvertida").value = parseFloat(tempConvertida);
     }
 
-    
+
     console.log(tempConverter)
     console.log(tempConvertida)
 }
