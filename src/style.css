@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&display=swap');
+body {
+    background: rgb(205, 74, 36);
+    background-image: url(./img/termometro2.png), linear-gradient(208deg, rgba(205, 74, 36, 1) 56%, rgba(246, 156, 7, 1) 89%);
+    height: 920px;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    border: 2px solid white;
+    background: white;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: auto;
+    padding: 20px;
+    height: 350px;
+    width: 650px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 16px;
+    width: max-content;
+    height: max-content;
+    background: #fff;
+}
+.title{
+    font-family: 'Gemunu Libre', sans-serif;
+    height: 800;
+    font-size: 28px;
+    justify-content: center;   
+    align-items: center;
+    display: flex;
+}
+
+label {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 18px;
+    height: 400;
+    color: black;
+    align-content: center;
+    margin-top: 5px;
+}
+
+select{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 18px;
+    height: 400;
+}
+
+input{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 18px;
+    height: 400;
+    margin: 5px;
+}
+
+.temp1 {
+    align-items: flex-start;
+}
+
+button {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 18px;
+    height: 400;
+    margin-top: 25px;
+    margin-left: 150px;
+    border-radius: 5px;
+    align-self: center;
+    align-content: center;
+    display: flex;
+}
+
+#swal2-html-container{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  
+  #swal2-actions{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+  }
